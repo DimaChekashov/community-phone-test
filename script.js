@@ -1,13 +1,16 @@
 const navbarToggle = document.querySelector(".header__toggle"),
-    header = document.querySelector(".header");
+    header = document.querySelector(".header"),
+    body = document.querySelector("body");
 
-navbarToggle.addEventListener("click", () => header.classList.toggle("active"));
+navbarToggle.addEventListener("click", () => {
+    header.classList.toggle("active");
+    body.classList.toggle("scroll-hidden");
+});
 
 // popup
 const popups = document.querySelectorAll(".popup"),
     overlay = document.querySelector("#overlay"),
-    popupItems = document.querySelectorAll("[data-popup]"),
-    body = document.querySelector("body");
+    popupItems = document.querySelectorAll("[data-popup]");
 
 const togglePopup = (popup) => {
     body.classList.remove("scroll-hidden");

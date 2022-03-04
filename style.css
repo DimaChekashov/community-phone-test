@@ -88,6 +88,10 @@ body {
     background: var(--greendark);
 }
 
+.signup-btn:focus {
+    background: var(--greendark);
+}
+
 .header__toggle {
     align-items: center;
     background: transparent;
@@ -122,6 +126,10 @@ body {
     transform: translateY(8px);
     transition: transform 0.5s, width 0.5s;
     width: 14px;
+}
+
+.header__toggle:focus {
+    outline: none;
 }
 
 .greeting {
@@ -196,6 +204,11 @@ body {
 }
 
 .signup-form__submit:hover {
+    background: var(--greendark);
+}
+
+.signup-form__submit:focus {
+    outline: none;
     background: var(--greendark);
 }
 
@@ -429,6 +442,10 @@ body {
     position: absolute;
     transform: rotate(315deg);
     width: 36px;
+}
+
+.popup__close:focus {
+    outline: none;
 }
 
 .popup__text {
